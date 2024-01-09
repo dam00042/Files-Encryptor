@@ -112,7 +112,7 @@ Una vez que hayas instalado Python y configurado los módulos necesarios, puedes
 - **Progreso de la Operación:**
    - Durante la encriptación o desencriptación, se mostrará una ventana de progreso.
 
-> [!DANGER]
+> [!WARNING]
 > NO CIERRES esta ventana de carga durante el proceso. El programa crashearía.
 
 - **Éxito o Error:**
