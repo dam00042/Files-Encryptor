@@ -99,8 +99,9 @@ Una vez que hayas instalado Python y configurado los módulos necesarios, puedes
 - **Opciones Adicionales:**
    - Marca la casilla **Comprimir antes de cifrar** si deseas comprimir el archivo antes de encriptarlo. Si es una carpeta lo que está seleccionando, se comprimirá igualmente
    - Marca la casilla **Descomprimir al descifrar** si el archivo está comprimido y deseas descomprimirlo al descifrarlo.
-   
-   > Debes asegurarte de que estás descomprimiendo un archivo con extensión **.zip.enc**. De lo contrario, no sé podrá desencriptar correctamente el archivo.
+
+> [!WARNING]
+> Debes asegurarte de que estás descomprimiendo un archivo con extensión **.zip.enc**. De lo contrario, no sé podrá desencriptar correctamente el archivo.
 
 - **Cifrar Archivo:**
    - Haz clic en el botón **Cifrar Archivo** para encriptar el archivo seleccionado. Te aparecerá un cuadro de selección de la carpeta de destino del archivo cifrado. Una vez seleccionado, se cifrará el archivo y se guardará en dicho directorio.
@@ -110,6 +111,7 @@ Una vez que hayas instalado Python y configurado los módulos necesarios, puedes
 
 - **Progreso de la Operación:**
    - Durante la encriptación o desencriptación, se mostrará una ventana de progreso.
+
 > [!DANGER]
 > NO CIERRES esta ventana de carga durante el proceso. El programa crashearía.
 
