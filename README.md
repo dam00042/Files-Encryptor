@@ -110,16 +110,17 @@ Una vez que hayas instalado Python y configurado los módulos necesarios, puedes
 
 - **Progreso de la Operación:**
    - Durante la encriptación o desencriptación, se mostrará una ventana de progreso.
-   > [!DANGER]
-   > NO CIERRES esta ventana de carga durante el proceso. El programa crashearía.
+> [!DANGER]
+> NO CIERRES esta ventana de carga durante el proceso. El programa crashearía.
 
 - **Éxito o Error:**
    - Después de completar la operación, recibirás un mensaje indicando si la operación fue exitosa o si hubo algún error. En caso de ser un error, revisa si la contraseña es correcta o si has seleccionado la misma fuerza de encriptado que seleccionaste al cifrar el archivo, así como las rutas y los nombres de los archivos.
 
 - **Limpiar Todo:**
    - Puedes utilizar el botón **Limpiar Todo** para restablecer todos los campos y preparar la aplicación para una nueva operación. Por defecto, cuando se lleva a cabo un proceso de cifrado o descifrado, se limpia toda la pantalla y los archivos cargados para evitar errores si se utiliza la aplicación para otros archivos distintos. También se hace por seguridad, para que la contraseña no se quede recordada. Lo único que no se reinicia es la lista de *radio buttons*, para evitar así errores en caso de que se siga usando la aplicación y no recuerdes seleccionar la fuerza que habías utilizado para encriptar. 
-	> [!WARNING]
-	> Una vez cierres la aplicación, deberás recordar con qué fuerza encriptaste un archivo, porque debes poner la misma para desencriptarlo posteriormente.
+ 
+> [!WARNING]
+> Una vez cierres la aplicación, deberás recordar con qué fuerza encriptaste un archivo, porque debes poner la misma para desencriptarlo posteriormente.
 
 Siguiendo estos pasos, podrás utilizar File Encryptor para cifrar y descifrar archivos de manera segura.
 
