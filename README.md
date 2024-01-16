@@ -1,4 +1,133 @@
-# Instrucciones de Instalación y uso de Files Encryptor
+# Installation and Usage Instructions for Files Encryptor (🇬🇧)
+
+## Steps to Install and Configure Python and Required Modules
+
+1. **Install Python:**
+   - Visit the [official Python website](https://www.python.org/downloads/).
+   - Download the latest version of Python 3.x for your operating system (Windows, macOS, or Linux).
+   - Run the downloaded installer and follow the on-screen instructions.
+   - Make sure to check the *Add Python to PATH* checkbox during the installation.
+
+2. **Verify Python Installation:**
+   - Open a new terminal window (Command Prompt on Windows or Terminal on macOS/Linux).
+   - Execute the following command to verify the installation:
+
+     ```bash
+     python --version
+     ```
+
+   - You should see the installed Python version.
+
+3. **Update pip (Python Package Manager):**
+   - Execute the following command to upgrade pip to the latest version:
+
+     ```bash
+     python -m pip install --upgrade pip
+     ```
+
+4. **Install Required Modules:**
+   - Open a terminal window.
+
+   - Navigate to the directory C:/Users/xxxx, where xxxx represents your username. If your username is pepe, you would need to enter the following in the terminal:
+
+     ```bash
+     cd C:/Users/pepe
+     ```
+
+   - Check if you already have the required modules for the project to work. Follow these steps:
+	
+     1. Type 'python' and press ENTER. 
+     ```bash 
+     python
+     ```
+     2. Next, type 'help' and press ENTER
+     ```bash 
+     help
+     ```
+     3. Now type 'help()' and press ENTER
+     ```bash 
+     help()
+     ```
+     4. From now on, you can check different Python help topics. In our case, type 'modules' and press ENTER
+     ```bash 
+     modules
+     ```
+     5. It will display all the installed modules for Python on your computer. Ensure that these modules are present: `os`, `io`, `zipfile`, `zlib`, `nacl`, `getpass`, `tkinter`, `threading`.
+     6. The following modules should be installed by default when installing Python: `os`, `io`, `zipfile`, `zlib`, `getpass`, `threading`, and possibly `tkinter`. Therefore, the only module that should be installed separately is `nacl`. If any other module is missing, simply search Google for how to install it.
+
+	 To install `nacl`:
+
+     ```bash
+     python -m pip install PyNaCl
+     ```
+
+	 To install `tkinter`:
+
+     ```bash
+     python -m pip install tk
+     ```
+
+5. **Run the Application:**
+   - After installing Python and the modules, you can run the application.
+   - Simply run the `execute_encryptor.bat` file located in this directory.
+
+With these steps, you should have Python installed and the necessary modules configured to run the application.
+
+---
+
+## Usage Instructions
+
+Once you have installed Python and configured the required modules, you can access its various functionalities:
+
+- **Open the Application:**
+   - Run the `execute_encryptor.bat` file located in the project directory.
+
+- **User Interface:**
+   - The File Encryptor user interface will open. It includes:
+	   + A text bar to enter the password, along with a button to hide or show the password.
+	   + Buttons to select a file and a folder; after selection, the chosen path will be displayed in the text box. If the first option is selected, you can encrypt a single file, and in the second case, an entire folder will be compressed automatically without marking the compression checkbox.
+	   + 3 *Radio* buttons with three options: *Interactive*, *Moderate*, and *Sensitive*. In ascending order of strength, they indicate whether more memory should be used and more operations should be performed in the encryption process using the *Salsa20 - Poly1305* algorithm.
+	   + Encryption and decryption buttons that will execute the command to encrypt the content after selecting the output folder for the encrypted file.
+	   + *Checkbox* buttons that allow indicating whether to compress before encryption or decompress a decrypted file afterward.
+	   + A button to clear the entire screen.
+
+- **Enter Information:**
+   - Enter a password in the corresponding field.
+   - Select a file or folder using the **Select File** or **Select Folder** buttons.
+   - Choose the desired hash strength using the radio buttons.
+
+- **Additional Options:**
+   - Check the **Compress before Encrypting** box if you want to compress the file before encrypting it. If a folder is selected, it will be compressed as well.
+   - Check the **Decompress when Decrypting** box if the file is compressed and you want to decompress it when decrypting.
+
+> [!WARNING]
+> Ensure that you are decompressing a file with the **.zip.enc** extension. Otherwise, the file cannot be decrypted correctly.
+
+- **Encrypt File:**
+   - Click the **Encrypt File** button to encrypt the selected file. A dialog box will appear to choose the destination folder for the encrypted file. Once selected, the file will be encrypted and saved in that directory.
+
+- **Decrypt File:**
+   Click the **Decrypt File** button to decrypt the selected file. A dialog box will appear to choose the destination folder for the decrypted file. Once selected, the file will be decrypted and saved in that directory.
+
+- **Operation Progress:**
+   - During encryption or decryption, a progress window will be displayed.
+
+> [!WARNING]
+> DO NOT CLOSE this loading window during the process. The program will crash.
+
+- **Success or Error:**
+   - After completing the operation, you will receive a message indicating whether the operation was successful or if there was an error. In case of an error, check if the password is correct or if you have selected the same encryption strength as when encrypting the file, as well as the paths and names of the files.
+
+- **Clear Everything:**
+   - You can use the **Clear Everything** button to reset all fields and prepare the application for a new operation. By default, when encryption or decryption is performed, the entire screen and loaded files are cleared to avoid errors if the application is used for other files. This is also done for security reasons so that the password is not remembered. The only thing that is not reset is the list of *radio buttons* to avoid errors if the application is still being used and you forget to select the strength you had used for encryption.
+
+> [!WARNING]
+> Once you close the application, you must remember with what strength you encrypted a file, as you need to use the same strength to decrypt it later.
+
+Following these steps, you can use File Encryptor to securely encrypt and decrypt files.
+
+
+# Instrucciones de Instalación y uso de Files Encryptor (🇪🇸)
 
 ## Pasos para instalar y configurar Python y los módulos necesarios
 
