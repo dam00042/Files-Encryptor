@@ -126,7 +126,7 @@ Once you have installed Python and configured the required modules, you can acce
 
 Following these steps, you can use File Encryptor to securely encrypt and decrypt files.
 
-
+---
 # Instrucciones de Instalación y uso de Files Encryptor (🇪🇸)
 
 ## Pasos para instalar y configurar Python y los módulos necesarios
