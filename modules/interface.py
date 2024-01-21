@@ -210,6 +210,11 @@ class FileEncryptorApp:
             messagebox.showwarning("Advertencia", "Por favor, seleccione un archivo e ingrese una contraseña.")
             return
 
+        # Comprobar si se trata de un archivo cifrado con extensión .enc y mostrar un mensaje de error si no lo es
+        if not file_path.endswith(".enc"):
+            messagebox.showerror("Error", "El archivo o directorio no está cifrado o no tiene extensión .enc. Seleciona un archivo cifrado correctamente.")
+            return
+
         output_path = filedialog.askdirectory()
 
         if not output_path:
@@ -221,7 +226,7 @@ class FileEncryptorApp:
 
         # Función para realizar el descifrado en un hilo separado
         def decrypt_in_thread():
-            self.progress_bar.start(50)  # Ajusta la velocidad según tus preferencias
+            self.progress_bar.start(50)
             decompress_bool = self.decompress_var.get()
             success = fe.decrypt_file(password, file_path, output_path, hash_strength_copy, decompress_after_decrypt= decompress_bool)
             self.progress_bar.stop()
